@@ -67,11 +67,8 @@
                             </ul>
                         </li>
                         <li><%= link_to 'Register', 'Register' %></li>
-                        <% if user_signed_in? %>
                         <li><%= link_to 'LogOut',  'LogOut' %></li>
-                        <% else %>
                         <li><%= link_to 'Login',  'Login' %></li>
-                        <% end%>
                         <li class="[ hidden-xs ]"><a href="#toggle-search" class="[ animate ]"><span class="[ glyphicon glyphicon-search ]"></span></a></li>
                     </ul>
                 </div>
