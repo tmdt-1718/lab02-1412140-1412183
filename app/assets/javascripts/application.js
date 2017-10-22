@@ -18,6 +18,6 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
-$(document).ready(function(){
-    alert("JS is working");
-});
+// $(document).ready(function(){
+//     alert("JS is working");
+// });
