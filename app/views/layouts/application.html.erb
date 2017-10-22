@@ -66,11 +66,11 @@
                                 <li><a href="#" class="[ animate ]">2.3.2</a></li>
                             </ul>
                         </li>
-                        <li><%= link_to 'Register', new_user_registration_path %></li>
+                        <li><%= link_to 'Register', 'Register' %></li>
                         <% if user_signed_in? %>
-                        <li><%= link_to 'LogOut',  destroy_user_session_path %></li>
+                        <li><%= link_to 'LogOut',  'LogOut' %></li>
                         <% else %>
-                        <li><%= link_to 'Login',  new_user_session_path %></li>
+                        <li><%= link_to 'Login',  'Login' %></li>
                         <% end%>
                         <li class="[ hidden-xs ]"><a href="#toggle-search" class="[ animate ]"><span class="[ glyphicon glyphicon-search ]"></span></a></li>
                     </ul>
