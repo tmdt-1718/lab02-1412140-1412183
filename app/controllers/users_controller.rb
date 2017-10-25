@@ -1,8 +1,12 @@
 class UsersController < ApplicationController
 
+  
   # run this firstly
   before_action :save_login_state, :only => [:new, :create]
   
+    def stranger
+      @stranger = User.all_except(@current_user)
+    end
     def new
         @user = User.new     
     end

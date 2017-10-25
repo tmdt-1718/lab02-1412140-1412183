@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-    
+  # scope :all_except, ->(user) { where.not(id: (user.friends + [user]).map(&:id))}
     has_many :friendships
     has_many :friends, :through => :friendships
     has_many :inverse_friendships, :class_name => "Friendship", :foreign_key => "friend_id"
@@ -18,7 +18,10 @@ class User < ApplicationRecord
 
       validates_length_of :password, :in => 6..20, :on => :create
     
-    
+      # def self.stranger(user_id)
+      #   stranger = User.all_except(user_id)
+      # end
+
       def self.authenticate(username_or_email="", login_password="")
     
         if  EMAIL_REGEX.match(username_or_email)    

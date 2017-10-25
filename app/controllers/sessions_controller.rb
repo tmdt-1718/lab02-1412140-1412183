@@ -3,21 +3,25 @@ class SessionsController < ApplicationController
 	before_action  :authenticate_user, :except => [:index, :login, :login_attempt, :logout]
 	
 	before_action  :save_login_state, :only => [:index, :login, :login_attempt]
-
+	
+	# def strange
+	# 	# List to make friend
+	# 	@stranger = User.stranger(session[:user_id])
+	# end
     def home
-		#Home Page
+		# Home Page
 	end
 
 	def profile
-		#Profile Page
+		# Profile Page
 	end
 
 	def setting
-		#Setting Page
+		# Setting Page
 	end
 
 	def login
-		#Login Form
+		# Login Form
 	end
 
 	# authenticate USER
