@@ -1,3 +1,20 @@
 <div class="row">
+    <div class="col col-lg-12">
+        <ol class="breadcrumb breadcrumb-arrow">
+            <li><a href="#">Email</a></li>
+            <li class="active"><span>Home</span></li>
+        </ol>
+    </div>
 </div>
-<h2> Home | <%= @current_user.username %></h2>
+<div class="row">
+<div class="col col-lg-2 col-md-4 list-opt">
+    <ul>
+        <li><button class="btn btn-default"><i class="fa fa-plus-circle" aria-hidden="true"></i> Compose</button></li>
+        <li><i class="fa fa-envelope" aria-hidden="true"></i> Inbox</li>
+        <li><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Outbox</li>
+        <li><i class="fa fa-users" aria-hidden="true"></i> Friends List</li>
+    </ul>
+</div>
+
+<div class="col col-lg-10 col-md-8 adaptable-content"></div>
+</div>

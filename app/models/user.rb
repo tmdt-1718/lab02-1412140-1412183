@@ -1,5 +1,6 @@
 class User < ApplicationRecord
 
+    has_many: friends
     attr_accessor :password
     
       before_save :encrypt_password

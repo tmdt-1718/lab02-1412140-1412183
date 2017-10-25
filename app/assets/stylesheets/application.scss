@@ -2,7 +2,12 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "nav";
-
+@import "breadcrum";
 body {
     margin-top: 70px;
+}
+
+.adaptable-content {
+    background: black;
+    min-height: 400px;
 }

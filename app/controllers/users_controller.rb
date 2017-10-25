@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 
+  # run this firstly
   before_action :save_login_state, :only => [:new, :create]
   
     def new
@@ -19,8 +20,12 @@ class UsersController < ApplicationController
       end
       
       private
+
       def user_params
         params.require(:user).permit(:username, :email, :password, :password_confirmation)
+      end
+
+      def friend_list
       end
   
   
