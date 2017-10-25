@@ -9,83 +9,83 @@
   </head>
 
   <body>
-    <nav class="[ navbar navbar-fixed-top ][ navbar-bootsnipp animate ]" role="navigation">
-            <div class="[ container ]">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="[ navbar-header ]">
-                    <button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="[ sr-only ]">Toggle navigation</span>
-                        <span class="[ icon-bar ]"></span>
-                        <span class="[ icon-bar ]"></span>
-                        <span class="[ icon-bar ]"></span>
-                    </button>
-                    <div class="[ animbrand ]">
-                        <a class="[ navbar-brand ][ animate ]" href="#">Email App</a>
-                    </div>
-                </div>
-    
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
-                    <ul class="[ nav navbar-nav navbar-right ]">
-                        <li class="[ visible-xs ]">
-                            <form action="http://bootsnipp.com/search" method="GET" role="search">
-                                <div class="[ input-group ]">
-                                    <input type="text" class="[ form-control ]" name="q" placeholder="Search for snippets">
-                                    <span class="[ input-group-btn ]">
-                                        <button class="[ btn btn-primary ]" type="submit"><span class="[ glyphicon glyphicon-search ]"></span></button>
-                                        <button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
-                                    </span>
-                                </div>
-                            </form>
-                        </li>
-                        <li><a href="#" class="[ animate ]">About</a></li>
-                        <li>
-                            <a href="#" class="[ dropdown-toggle ][ animate ]" data-toggle="dropdown">Resources <span class="[ caret ]"></span></a>
-                            <ul class="[ dropdown-menu ]" role="menu">
-                                <li><a href="#" class="[ animate ]">Blog <span class="[ pull-right glyphicon glyphicon-pencil ]"></span></a></li>
-                                <li><a href="#" class="[ animate ]">List of resources <span class="[ pull-right glyphicon glyphicon-align-justify ]"></span></a></li>
-                                <li><a href="#" class="[ animate ]">Download Bootstrap <span class="[ pull-right glyphicon glyphicon-cloud-download ]"></span></a></li>
-                                <li class="[ dropdown-header ]">Bootstrap Templates</li>
-                                <li><a href="#" class="[ animate ]">Browse Templates <span class="[ pull-right glyphicon glyphicon-shopping-cart ]"></span></a></li>
-                                <li class="[ dropdown-header ]">Builders</li>
-                                <li><a href="#" class="[ animate ]">Form Builder <span class="[ pull-right glyphicon glyphicon-tasks ]"></span></a></li>
-                                <li><a href="#" class="[ animate ]">Button Builder <span class="[ pull-right glyphicon glyphicon-edit ]"></span></a></li>
-                            </ul>
-                        </li>
-                        <li class="[ dropdown ]">
-                            <a href="#" class="[ dropdown-toggle ][ animate ]" data-toggle="dropdown">Snippets <span class="[ caret ]"></span></a>
-                            <ul class="[ dropdown-menu ]" role="menu">
-                                <li><a href="#" class="[ animate ]">Featured <span class="[ pull-right glyphicon glyphicon-star ]"></span></a></li>
-                                <li><a href="#" class="[ animate ]">Tags  <span class="[ pull-right glyphicon glyphicon-tags ]"></span></a></li>
-                                <li class="[ dropdown-header ]">By Bootstrap Version</li>
-                                <li><a href="#" class="[ animate ]">3.2.0</a></li>
-                                <li><a href="#" class="[ animate ]">3.1.0</a></li>
-                                <li><a href="#" class="[ animate ]">3.0.3</a></li>
-                                <li><a href="#" class="[ animate ]">3.0.1</a></li>
-                                <li><a href="#" class="[ animate ]">3.0.0</a></li>
-                                <li><a href="#" class="[ animate ]">2.3.2</a></li>
-                            </ul>
-                        </li>
-                        <li><%= link_to 'Register', 'Register' %></li>
-                        <li><%= link_to 'LogOut',  'LogOut' %></li>
-                        <li><%= link_to 'Login',  'Login' %></li>
-                        <li class="[ hidden-xs ]"><a href="#toggle-search" class="[ animate ]"><span class="[ glyphicon glyphicon-search ]"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="[ bootsnipp-search animate ]">
-                <div class="[ container ]">
-                    <form action="http://bootsnipp.com/search" method="GET" role="search">
-                        <div class="[ input-group ]">
-                            <input type="text" class="[ form-control ]" name="q" placeholder="Search for snippets and hit enter">
-                            <span class="[ input-group-btn ]">
-                                <button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
-                            </span>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <%= yield %>
+		<!-- NAVBAR -->
+		<nav class="[ navbar navbar-fixed-top ][ navbar-bootsnipp animate ]" role="navigation">
+				<div class="[ container ]">
+					<div class="[ navbar-header ]">
+						<button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="[ sr-only ]">Toggle navigation</span>
+							<span class="[ icon-bar ]"></span>
+							<span class="[ icon-bar ]"></span>
+							<span class="[ icon-bar ]"></span>
+						</button>
+						<div class="[ animbrand ]">
+							<a class="[ navbar-brand ][ animate ]" href="#">Email App</a>
+						</div>
+					</div>
+	
+					<div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+						<ul class="[ nav navbar-nav navbar-right ]">
+							<li class="[ visible-xs ]">
+								<form action="" method="GET" role="search">
+									<div class="[ input-group ]">
+										<input type="text" class="[ form-control ]" name="q" placeholder="Search for . . .">
+										<span class="[ input-group-btn ]">
+											<button class="[ btn btn-primary ]" type="submit"><span class="[ glyphicon glyphicon-search ]"></span></button>
+											<button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
+										</span>
+									</div>
+								</form>
+							</li>
+							<% if session[:user_id]%>
+							<li><%= link_to :Home , :home, class: "nav_links" %></li>
+							<li><%= link_to :Profile , :profile, class: "nav_links" %></li>
+							<li><%= link_to :Setting , :setting, class: "nav_links" %></li>
+							<li><%= link_to :Logout , :logout, class: "nav_links" %></li>	
+							<% else %>
+							<li><%= link_to :Signup , :signup, class: "nav_links"%></li>
+							<li><%= link_to :Login , :login, class: "nav_links"%></li>	
+							<% end %>
+							<li><a href="#" class="animate">About</a></li>
+							<li class="[ hidden-xs ]"><a href="#toggle-search" class="[ animate ]"><span class="[ glyphicon glyphicon-search ]"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="[ bootsnipp-search animate ]">
+					<div class="[ container ]">
+						<form action="" method="GET" role="search">
+							<div class="[ input-group ]">
+								<input type="text" class="[ form-control ]" name="q" placeholder="Search for . . . and hit enter">
+								<span class="[ input-group-btn ]">
+									<button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</nav>
+		<div class="container">
+			<!-- NOTIFICATION OR ALERT AREA -->
+			<div class="row">
+				<div class="col col-lg-12">
+			
+						<% if flash[:color] == "valid" %>
+							<div class="alert alert-success fade in">
+								<a href="#" class="close" data-dismiss="alert">&times;</a>
+								<%= flash[:notice] %>
+							</div>
+						<% end %>
+						
+						<% if flash[:color] == "invalid"%>
+							<div class="alert alert-danger fade in">
+								<a href="#" class="close" data-dismiss="alert">&times;</a>
+								<%= flash[:notice] %>
+							</div>
+						<% end %>
+				</div>
+			</div>
+			<!-- MAIN CONTENT -->
+			<%= yield %>
+		</div>
   </body>
 </html>
